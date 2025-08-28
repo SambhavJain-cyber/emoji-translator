@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text‑to‑Emoji Translator</title>
+  <meta name="description" content="A fun, privacy‑friendly Text‑to‑Emoji translator that runs 100% in your browser. No login, no backend." />
+  <link rel="stylesheet" href="emoji.css" />
+</head>
+<body>
+  <header>
+    <div class="title">
+      <div class="logo">🔤➡️😊</div>
+      <div>
+        <h1>Text‑to‑Emoji Translator</h1>
+        <p class="sub">Type anything. We’ll sprinkle the perfect emojis — all offline, in your browser. No logins. No tracking.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="inputCard">
+      <div class="head">
+        <h2>1) Your Text</h2>
+        <span class="badge" id="charCount">0 chars</span>
+      </div>
+      <div class="ad-slot">AdSense top (insert code here later)</div>
+      <div style="padding:0 16px 8px">
+        <textarea id="input" placeholder="e.g. Going to the gym in the morning, then coffee and code with friends."></textarea>
+      </div>
+      <div class="controls">
+  <!-- Switches removed -->
+        <div class="row" style="justify-content:center; width:100%;">
+          <button class="primary" id="translateBtn">Translate 🔁</button>
+          <button id="clearBtn">Clear</button>
+        </div>
+      </div>
+  <div class="stats"><span id="replaceStat">0 replacements</span><span>•</span><span id="wordStat">0 sentences detected</span></div>
+    </section>
+
+    <section class="card" id="outputCard">
+      <div class="head">
+        <h2>2) Result</h2>
+        <span class="badge" id="emojiCount">0 emojis</span>
+      </div>
+      <div class="ad-slot">AdSense middle (insert code here later)</div>
+      <div style="padding:0 16px 16px">
+        <textarea id="output" placeholder="Your translated text will appear here…" readonly></textarea>
+  <div class="row" style="margin-top:16px; justify-content:center; width:100%;">
+          <button id="downloadBtn">Download .txt</button>
+          <button id="copyBtn">Copy Text</button>
+        </div>
+      </div>
+  <!-- Quick Dictionary removed -->
+    </section>
+  </main>
+
+  <footer style="background:#121821; color:#8aa0b5; border-radius:18px; margin:32px auto 0; max-width:1100px; padding:18px 16px;">
+  <!-- Footer badges removed -->
+    <div>© <span id="year"></span> Text‑to‑Emoji Translator</div>
+  </footer>
+
+  <script src="emoji.js"></script>
+</body>
+</html>
