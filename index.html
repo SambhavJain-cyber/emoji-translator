@@ -24,7 +24,18 @@
         <h2>1) Your Text</h2>
         <span class="badge" id="charCount">0 chars</span>
       </div>
-      <div class="ad-slot">AdSense top (insert code here later)</div>
+      <!-- AdSense top -->
+      <div class="ad-slot">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
       <div style="padding:0 16px 8px">
         <textarea id="input" placeholder="e.g. Going to the gym in the morning, then coffee and code with friends."></textarea>
       </div>
@@ -43,10 +54,21 @@
         <h2>2) Result</h2>
         <span class="badge" id="emojiCount">0 emojis</span>
       </div>
-      <div class="ad-slot">AdSense middle (insert code here later)</div>
+      <!-- AdSense middle -->
+      <div class="ad-slot">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
       <div style="padding:0 16px 16px">
         <textarea id="output" placeholder="Your translated text will appear here…" readonly></textarea>
-  <div class="row" style="margin-top:16px; justify-content:center; width:100%;">
+        <div class="row" style="margin-top:16px; justify-content:center; width:100%;">
           <button id="downloadBtn">Download .txt</button>
           <button id="copyBtn">Copy Text</button>
         </div>
@@ -56,7 +78,11 @@
   </main>
 
   <footer style="background:#121821; color:#8aa0b5; border-radius:18px; margin:32px auto 0; max-width:1100px; padding:18px 16px;">
-  <!-- Footer badges removed -->
+    <nav style="margin-bottom:8px;">
+      <a href="privacy.html" style="color:#8aa0b5; margin-right:18px;">Privacy Policy</a>
+      <a href="terms.html" style="color:#8aa0b5; margin-right:18px;">Terms</a>
+      <a href="contact.html" style="color:#8aa0b5;">Contact</a>
+    </nav>
     <div>© <span id="year"></span> Text‑to‑Emoji Translator</div>
   </footer>
 
